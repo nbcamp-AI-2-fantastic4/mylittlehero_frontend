@@ -1,6 +1,6 @@
 .main_body {
   width: 935px;
-  height: 1600px;
+  height: auto;
 
   margin: 120px auto;
 
@@ -12,7 +12,7 @@
 .main_body .row_upload_btn {
   margin-top: 30px;
   width: 100%;
-  height: 100px;
+  height: 150px;
 }
 
 .main_body .row_upload_btn .btn_box {
@@ -34,6 +34,10 @@
   padding: 10px;
 
   display: block;
+}
+
+#result_view {
+  display: none;
 }
 
 .main_body .row_main_img {
