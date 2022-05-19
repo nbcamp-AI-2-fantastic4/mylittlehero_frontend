@@ -15,53 +15,47 @@
 //     post_listing()
 // })
 
-
 /* POST 요청 ajax 코드 */
 function post_posting() {
-    // 고유 id let 함수로 정의
-    let hashtag = $('#post_hashtag').val()
-    let comment = $('#post_comment').val()
-    let today = new Date().toISOString()
+  // 고유 id let 함수로 정의
+  let hashtag = $("#post_hashtag").val();
+  let comment = $("#post_comment").val();
+  let today = new Date().toISOString();
 
-    let picture = $('#customFile')[0].files[0]
-    let form_data = new FormData()
+  let picture = $("#customFile")[0].files[0];
+  let form_data = new FormData();
 
-    form_data.append("hashtag_give", hashtag)
-    form_data.append("picture_give", picture)
-    form_data.append("comment_give", comment)
-    form_data.append("date_give", today)
+  form_data.append("hashtag_give", hashtag);
+  form_data.append("picture_give", picture);
+  form_data.append("comment_give", comment);
+  form_data.append("date_give", today);
 
-    $.ajax({
-        type: "POST",
-        url: "/posting",
-        data: form_data,
-        cache: false,
-        contentType: false,
-        processData: false,
-        success: function (response) {
-            alert(response['msg'])
-            window.location.reload()
-        }
-    })
+  $.ajax({
+    type: "POST",
+    url: "/posting",
+    data: form_data,
+    cache: false,
+    contentType: false,
+    processData: false,
+    success: function (response) {
+      alert(response["msg"]);
+      window.location.reload();
+    },
+  });
 }
 
 // 자바스크립트 파일 업로드  이미지 미리보기 삭제가안됨
 function setThumbnail(event) {
-    var reader = new FileReader();
-    var header = document.querySelector("img");	//제거하고자 하는 엘리먼트
-    var body = document.querySelector('#image_container');	// 그 엘리먼트의 부모 객체
-    body.removeChild(header);
-    reader.onload = function (event) {
+  console.log(event.target.files[0]);
+  var reader = new FileReader();
+  reader.onload = (event) => {
+    console.log(event);
+    var img = document.querySelector("#image_file");
+    img.setAttribute("src", event.target.result);
+  };
 
-        var img = document.createElement("img");
-        img.setAttribute("src", event.target.result);
-
-        document.querySelector("div#image_container").appendChild(img);
-    };
-    reader.readAsDataURL(event.target.files[0]);
-
+  reader.readAsDataURL(event.target.files[0]);
 }
-
 
 // 파일 업로드 이미지 미리보기
 // function previewImage(targetObj, previewId) {
@@ -122,4 +116,3 @@ function setThumbnail(event) {
 //         }
 //     }
 // }
-

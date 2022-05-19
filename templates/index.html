@@ -95,7 +95,7 @@
       </div>
 
       <div class="row_hero_info">
-        <div class="hero_name">1위 - <span id="main_hero">그루트</span></div>
+        <div class="hero_name" id="main_hero">1위 - <span>그루트</span></div>
         <div class="hero_desc">
           마블 코믹스에 등장하는 캐릭터로, 첫 등장은 Tales to Astonish #13으로
           60년대에 잭 커비, 스탠 리와 딕 에이어가 만들었다. 이름의 유래는
@@ -122,23 +122,23 @@
       </div>
 
       <div class="row_hero_sub">
-        <div class="hero_sub_box">
+        <div class="hero_sub_box" name="2" id="sub_hero">
           <img
-            id="sub_hero_img_1"
+            name="토르"
             class="hero_sub_img"
-            onclick="change_main_hero('1')"
+            onclick="change_main_hero(event, 2)"
             src="../static/images/hero/토르.png"
           />
-          2위 - <span id="sub_hero_1">토르</span>
+          2위 - <span>토르</span>
         </div>
-        <div class="hero_sub_box">
+        <div class="hero_sub_box" name="3" id="sub_hero">
           <img
-            id="sub_hero_img_2"
+            name="헐크"
             class="hero_sub_img"
-            onclick="change_main_hero('2')"
+            onclick="change_main_hero(event, 3)"
             src="../static/images/hero/헐크.png"
           />
-          3위 - <span id="sub_hero_2">헐크</span>
+          3위 - <span>헐크</span>
         </div>
       </div>
 
