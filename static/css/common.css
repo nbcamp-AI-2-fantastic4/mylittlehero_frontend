@@ -1,0 +1,58 @@
+* {
+  font-family: "Nanum Gothic", sans-serif;
+}
+
+.team_color {
+  background-color: #7b1f1f;
+}
+
+.header {
+  width: 100%;
+  height: 80px;
+
+  padding: 10px;
+  margin-left: -10px;
+
+  box-shadow: 1px 1px 5px gray;
+
+  background-color: #fff0f0;
+
+  position: fixed;
+
+  top: 0px;
+
+  z-index: 99999;
+}
+
+.header .header_body {
+  width: 935px;
+  height: 100%;
+
+  margin: auto;
+
+  display: flex;
+  flex-direction: row;
+  align-items: normal;
+  justify-content: space-between;
+}
+
+.header .header_body .logo {
+  height: 100%;
+  border-radius: 10px;
+
+  box-shadow: 1px 1px 5px gray;
+}
+
+.header .header_body .user_info {
+  width: 30%;
+  height: 100%;
+
+  margin-top: 10px;
+  text-align: right;
+  line-height: 130%;
+}
+
+#logout_btn {
+  margin: 5px 0px 10px 5px;
+  padding: 5px;
+}
