@@ -1,6 +1,6 @@
 .main_body {
   width: 935px;
-  height: 1600px;
+  height: auto;
 
   margin: 120px auto;
 
@@ -12,7 +12,7 @@
 .main_body .row_upload_btn {
   margin-top: 30px;
   width: 100%;
-  height: 100px;
+  height: 150px;
 }
 
 .main_body .row_upload_btn .btn_box {
@@ -36,9 +36,13 @@
   display: block;
 }
 
+#result_view {
+  display: none;
+}
+
 .main_body .row_main_img {
   width: 100%;
-  height: 30s0px;
+  height: 300px;
 
   margin-top: 50px;
 
@@ -125,13 +129,18 @@
 }
 
 .row_histoty_btn .histroy_btn_box {
-  width: 200px;
+  width: 500px;
   height: 100%;
   margin: auto;
+
+  display: flex;
+  flex-direction: row;
+  align-items: normal;
+  justify-content: space-between;
 }
 
 .row_histoty_btn .histroy_btn_box .history_btn {
-  width: 100%;
+  width: 40%;
 
   padding: 10px;
   display: block;

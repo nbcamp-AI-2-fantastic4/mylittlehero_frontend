@@ -1,31 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bree+Serif&family=EB+Garamond:ital,wght@0,500;1,800&display=swap');
+*{
+
+}
+article {
+    float: left;
+}
 
 body {
-    margin: 0;
+    -ms-overflow-style: none;
 }
 
-header {
+::-webkit-scrollbar {
+    display: none;
+}
+
+.blank {
     width: 100%;
-    height: 60px;
-    background-color: darkred;
-}
-
-.nav1 {
-    float: left;
-}
-
-.nav2 {
-    float: right;
-    padding: 15px 15px 15px 0;
-}
-
-article {
-    display: flex;
-    float: left;
-}
-
-.information {
-
+    height: 150px;
 }
 /*컨테이너 레이아웃*/
 #container {
@@ -34,28 +25,30 @@ article {
     text-align: center;
     border-radius: 5px;
     overflow: hidden;
-    margin: 70px 0 20px 40px;
-    height: 330px;
+    margin: 50px 5px 25px 30px;
+    height: 350px;
     width: 650px;
-    /*display: flex;*/
+    position: relative;
+
 }
 
 .product-details {
     position: relative;
     overflow: hidden;
     padding: 10px 0 5px 30px;
-    height: 300px;
+    height: 310px;
     float: left;
     width: 40%;
 }
 
 #container .product-details h1 {
-    font-family: 'Bebas Neue', cursive;
+    /*font-family: 'Bebas Neue', cursive;*/
     display: inline-block;
     position: relative;
     font-size: 30px;
     color: #344055;
     margin: 0;
+    font-family: 'Stylish', sans-serif;
 }
 
 #container .product-details h1:before {
