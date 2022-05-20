@@ -46,7 +46,7 @@ function post_posting() {
 
 // 자바스크립트 파일 업로드  이미지 미리보기 삭제가안됨
 function setThumbnail(event) {
-  console.log(event.target.files[0]);
+  console.log(event);
   var reader = new FileReader();
   reader.onload = (event) => {
     console.log(event);
