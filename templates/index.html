@@ -56,7 +56,7 @@
         <a href="/"><img class="logo" src="../static/images/logo.png" /></a>
         <div class="user_info">
           <span style="font-weight: bold" id="user_name">김동우</span> <br />
-          <span id="user_email">kimphysicsman@gmail.com</span>  <br />
+          <span id="user_email">kimphysicsman@gmail.com</span> <br />
           <button id="logout_btn" onclick="logout()">로그아웃</button>
         </div>
       </div>
@@ -66,7 +66,7 @@
     <div class="main_body">
       <div class="row_upload_btn" id="select_view">
         <div class="btn_box">
-          <button class="btn_upload" onclick="upload_user_img()">
+          <button class="btn_upload" onclick="upload_img_modal()">
             사진 업로드
           </button>
           ↑↑↑ 사진 업로드하기 ↑↑↑ <br />
@@ -85,48 +85,61 @@
             나의 사진
           </div>
           <div class="main_img_box">
-            <img
-              id="main_hero_img"
-              class="main_img"
-              name="hero"
-              src=""
-            />
+            <img id="main_hero_img" class="main_img" name="hero" src="" />
             닮은 꼴 마블 캐릭터
           </div>
         </div>
 
-      <div class="row_hero_info">
-        <div class="hero_name" id="main_hero" name=""></div>
-        <div class="hero_desc" id="main_desc">
-        </div>
+        <div class="row_hero_info">
+          <div class="hero_name" id="main_hero" name=""></div>
+          <div class="hero_desc" id="main_desc"></div>
 
-      <div class="row_hero_sub">
-        <div class="hero_sub_box" name="2">
-          <img
-            name=""
-            class="hero_sub_img"
-            onclick="change_main_hero(event, 2)"
-            src=""
-          />
-          <div></div>
-        </div>
-        <div class="hero_sub_box" name="3">
-          <img
-            name=""
-            class="hero_sub_img"
-            onclick="change_main_hero(event, 3)"
-            src=""
-          />
-          <div></div>
-        </div>
-      </div>
+          <div class="row_hero_sub">
+            <div class="hero_sub_box" name="2">
+              <img
+                name=""
+                class="hero_sub_img"
+                onclick="change_main_hero(event, 2)"
+                src=""
+              />
+              <div></div>
+            </div>
+            <div class="hero_sub_box" name="3">
+              <img
+                name=""
+                class="hero_sub_img"
+                onclick="change_main_hero(event, 3)"
+                src=""
+              />
+              <div></div>
+            </div>
+          </div>
 
-        <div class="row_histoty_btn">
-          <div class="histroy_btn_box">
-            <button class="history_btn" onclick="restart_upload()">다시 하기</button>
-            <button class="history_btn">히스토리 보러가기</button>
+          <div class="row_histoty_btn">
+            <div class="histroy_btn_box">
+              <button class="history_btn" onclick="restart_upload()">
+                다시 하기
+              </button>
+              <button class="history_btn">히스토리 보러가기</button>
+            </div>
           </div>
         </div>
+      </div>
+    </div>
+
+    <!-- 이미지 업로드 모달창-->
+    <div class="img_modal_box">
+      <div class="img_modal_input">
+        <input
+          type="file"
+          id="modal_input_img"
+          accept="image/*"
+          onchange="preview(event);"
+        />
+        <div id="image_container">
+          <img id="image_file" src="" />
+        </div>
+        <button onclick="upload_user_img()">업로드 하기</button>
       </div>
     </div>
   </body>
