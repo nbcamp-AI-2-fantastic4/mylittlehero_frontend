@@ -4,6 +4,7 @@ function upload_user_img() {
 
   $("#select_view").css("display", "none");
   $("#result_view").css("display", "block");
+  $(".img_modal_box").css("display", "none");
 }
 
 // 다시하기 버튼 함수
@@ -80,10 +81,18 @@ let dummy_heros = [
 
 // 메인 결과 화면을 보여주는 API
 async function save_result() {
+  let file = $("#modal_input_img")[0].files[0];
+  let form_data = new FormData();
+
+  form_data.append("user_img", file);
+
   $.ajax({
     type: "POST",
     url: "http://172.30.1.36:5000/main/result",
-    data: {},
+    data: form_data,
+    cache: false,
+    contentType: false,
+    processData: false,
     success: function (response) {
       dummy_heros = response["results"];
 
@@ -120,4 +129,20 @@ async function save_result() {
       );
     },
   });
+}
+
+// 이미지 업로드 모달창 띄우는 함수
+function upload_img_modal() {
+  $(".img_modal_box").css("display", "block");
+}
+
+// 모달창에서 업로드할 이미지 미리보기
+function preview(event) {
+  var reader = new FileReader();
+  reader.onload = (event) => {
+    var img = document.querySelector("#image_file");
+    img.setAttribute("src", event.target.result);
+  };
+
+  reader.readAsDataURL(event.target.files[0]);
 }
