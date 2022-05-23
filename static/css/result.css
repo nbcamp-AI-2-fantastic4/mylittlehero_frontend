@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bree+Serif&family=EB+Garamond:ital,wght@0,500;1,800&display=swap');
-*{
 
-}
+* {}
+
 article {
     float: left;
 }
@@ -18,6 +18,7 @@ body {
     width: 100%;
     height: 150px;
 }
+
 /*컨테이너 레이아웃*/
 #container {
     box-shadow: 0 15px 30px 1px grey;
@@ -29,6 +30,7 @@ body {
     height: 350px;
     width: 650px;
     position: relative;
+    float: left;
 
 }
 
@@ -68,7 +70,7 @@ body {
     animation: chan-sh 6s ease infinite;
 }
 
-#container .product-details > p {
+#container .product-details>p {
     font-family: 'EB Garamond', serif;
     text-align: center;
     font-size: 18px;
@@ -125,13 +127,13 @@ body {
     transform: translateX(0);
 }
 
-.info ul li {
+/* .info ul li {
     transition: 0.3s ease;
 }
 
 .info ul li:hover {
     transform: translateX(50px) scale(1.3);
-}
+} */
 
 .product-image:hover img {
     transition: all 0.3s ease-out;

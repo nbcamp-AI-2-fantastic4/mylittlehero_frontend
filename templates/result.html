@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="../static/css/result.css">
-    <link href="../static/css/common.css" rel="stylesheet" type="text/css"/>
+    <script defer src="../static/js/result.js"></script>
+    <link href="../static/css/common.css" rel="stylesheet" type="text/css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Stylish&display=swap" rel="stylesheet">
@@ -19,136 +19,31 @@
 
 
 <body class="team_color">
-<!-- 해더 -->
-<div class="header">
-    <div class="header_body">
-        <a href="/"><img class="logo" src="../static/images/logo.png"/></a>
-        <div class="user_info">
-            <span style="font-weight: bold">김동우</span> <br/>
-            kimphysicsman@gmail.com <br/>
-            <button id="logout_btn" onclick="logout()">로그아웃</button>
+    <!-- 해더 -->
+    <div class="header">
+        <div class="header_body">
+            <a href="/"><img class="logo" src="../static/images/logo.png" /></a>
+            <div class="user_info">
+                <span style="font-weight: bold">김동우</span> <br />
+                kimphysicsman@gmail.com <br />
+                <button id="logout_btn" onclick="logout()">로그아웃</button>
+            </div>
         </div>
     </div>
-</div>
 
-<aside class="blank">
-    <p>dfdf</p>
-</aside>
-<section>
-    <article>
-        <div id="container">
+    <aside class="blank">
+        <p></p>
+    </aside>
+    <section>
+        <article id="result-box">
 
-            <div class="product-details">
 
-                <h1>닮은꼴</h1>
+        </article>
+    </section>
 
-                <img src="https://image.cine21.com/resize/cine21/person/2018/0706/16_07_53__5b3f1549238b4[H800-].jpg"
-                     class="information" id="user_img">
+    <script>
 
-            </div>
-            <!--마블 이미지 넣는 곳-->
-            <div class="product-image" id="marble_img">
-                <img src="https://file2.nocutnews.co.kr/newsroom/image/2021/07/30/202107301555541559_0.jpg"
-                     alt="">
-                <div class="info" id="marble_info">
-                    <h2> Description</h2>
-                    <ul>
-                        <li><strong>Name : </strong>나타샤</li>
-                        <li><strong>Shade : </strong>Olive green</li>
-                        <li><strong>Decoration: </strong>balls and bells</li>
-                        <li><strong>Material: </strong>Eco-Friendly</li>
-                    </ul>
-                </div>
-            </div>
-
-        </div>
-    </article>
-    <article>
-        <div id="container">
-
-            <div class="product-details">
-
-                <h1>닮은꼴</h1>
-
-                <img src="#" class="information" id="user_img">
-
-            </div>
-            <!--마블 이미지 넣는 곳-->
-            <div class="product-image" id="marble_img">
-                <img src="https://images.unsplash.com/photo-1606830733744-0ad778449672?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mzl8fGNocmlzdG1hcyUyMHRyZWV8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
-                     alt="">
-                <div class="info" id="marble_info">
-                    <h2> Description</h2>
-                    <ul>
-                        <li><strong>Name : </strong>5 Ft</li>
-                        <li><strong>Shade : </strong>Olive green</li>
-                        <li><strong>Decoration: </strong>balls and bells</li>
-                        <li><strong>Material: </strong>Eco-Friendly</li>
-                    </ul>
-                </div>
-            </div>
-
-        </div>
-    </article>
-    <article>
-        <div id="container">
-
-            <div class="product-details">
-
-                <h1>닮은꼴</h1>
-
-                <img src="#" class="information" id="user_img">
-
-            </div>
-            <!--마블 이미지 넣는 곳-->
-            <div class="product-image" id="marble_img">
-                <img src="https://images.unsplash.com/photo-1606830733744-0ad778449672?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mzl8fGNocmlzdG1hcyUyMHRyZWV8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
-                     alt="">
-                <div class="info" id="marble_info">
-                    <h2> Description</h2>
-                    <ul>
-                        <li><strong>Name : </strong>5 Ft</li>
-                        <li><strong>Shade : </strong>Olive green</li>
-                        <li><strong>Decoration: </strong>balls and bells</li>
-                        <li><strong>Material: </strong>Eco-Friendly</li>
-                    </ul>
-                </div>
-            </div>
-
-        </div>
-    </article>
-    <article>
-        <div id="container">
-
-            <div class="product-details">
-
-                <h1>닮은꼴</h1>
-
-                <img src="#" class="information" id="user_img">
-
-            </div>
-            <!--마블 이미지 넣는 곳-->
-            <div class="product-image" id="marble_img">
-                <img src="https://images.unsplash.com/photo-1606830733744-0ad778449672?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mzl8fGNocmlzdG1hcyUyMHRyZWV8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
-                     alt="">
-                <div class="info" id="marble_info">
-                    <h2> Description</h2>
-                    <ul>
-                        <li><strong>Name : </strong>5 Ft</li>
-                        <li><strong>Shade : </strong>Olive green</li>
-                        <li><strong>Decoration: </strong>balls and bells</li>
-                        <li><strong>Material: </strong>Eco-Friendly</li>
-                    </ul>
-                </div>
-            </div>
-
-        </div>
-    </article>
-
-</section>
-
-<script>
-
-</script>
+    </script>
 </body>
+
 </html>
