@@ -9,6 +9,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="../static/css/result.css">
     <script defer src="../static/js/result.js"></script>
+    <script defer src="../static/js/common.js"></script>
     <link href="../static/css/common.css" rel="stylesheet" type="text/css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,8 +25,8 @@
         <div class="header_body">
             <a href="/"><img class="logo" src="../static/images/logo.png" /></a>
             <div class="user_info">
-                <span style="font-weight: bold">김동우</span> <br />
-                kimphysicsman@gmail.com <br />
+                <span style="font-weight: bold" id="user_name">김동우</span> <br />
+                <span id="user_email">kimphysicsman@gmail.com</span> <br />
                 <button id="logout_btn" onclick="logout()">로그아웃</button>
             </div>
         </div>
