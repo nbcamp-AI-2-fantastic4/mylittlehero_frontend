@@ -81,10 +81,12 @@ let dummy_heros = [
 
 // 메인 결과 화면을 보여주는 API
 async function save_result() {
+  let token = localStorage.getItem("token");
   let file = $("#modal_input_img")[0].files[0];
   let form_data = new FormData();
 
   form_data.append("user_img", file);
+  form_data.append("token", token);
 
   $.ajax({
     type: "POST",
@@ -154,6 +156,10 @@ function preview(event) {
 }
 
 // 이미지 업로드 모달창 끄기 함수
-function quit_img_modal() {
-  $(".img_modal_box").css("display", "none");
+function quit_img_modal(event) {
+  const modal_box = document.querySelector(".img_modal_box");
+
+  if (event.target == modal_box) {
+    $(".img_modal_box").css("display", "none");
+  }
 }
