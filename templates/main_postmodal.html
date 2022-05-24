@@ -13,7 +13,7 @@
           integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
     <!-- 포스트 모달 css-->
-    <!--    <link rel="stylesheet" href="../static/css/main_postmodal.css" type="text/css">-->
+    <link rel="stylesheet" href="../static/css/main_postmodal.css" type="text/css">
     <script src="../static/js/main_postmodal.js"></script>
 
     <title>postmodal</title>
@@ -26,34 +26,107 @@
     <div class="uploadmodal">
 
 
-        <span style="font-size:1.3em;letter-spacing:-1px;color:#242a30;">&nbsp;&nbsp; <b>얼굴 사진과 마블히어로들을 비교해드립니다</b></span></p>
-        <span style="font-size:1em;letter-spacing:-1px;color:#838383;"> 용량이 너무 큰 고화질 사진은 오류가 발생할 수 있어요 (2mb 이하 권장)</span></p>
-        <span style="font-size:1em;letter-spacing:-1px;color:#b8b8b8;">If you upload a picture of your face here, you'll find a look-alike  marvel heroes. You can also compare with accuracies between you and  marvel heroes.</span></p>
-                 <input type="file" id="image" accept="image/*" onchange="setThumbnail(event);"/>
-                <div id="image_container">
-                    <img id="image_file" src="">
-                </div>
+        <!--        <span style="font-size:1.3em;letter-spacing:-1px;color:#242a30;">&nbsp;&nbsp; <b>얼굴 사진과 마블히어로들을 비교해드립니다</b></span></p>-->
+        <!--        <span style="font-size:1em;letter-spacing:-1px;color:#838383;"> 용량이 너무 큰 고화질 사진은 오류가 발생할 수 있어요 (2mb 이하 권장)</span></p>-->
+        <!--        <span style="font-size:1em;letter-spacing:-1px;color:#b8b8b8;">If you upload a picture of your face here, you'll find a look-alike  marvel heroes. You can also compare with accuracies between you and  marvel heroes.</span></p>-->
+        <!--        <input type="file" id="image" accept="image/*" onchange="setThumbnail(event);"/>-->
+        <!--        <div id="image_container">-->
+        <!--            <img id="image_file" src="">-->
+        <!--        </div>-->
 
 
-<!--&lt;!&ndash;        파일 업로드 이미지 미리보기&ndash;&gt;-->
-<!--        <input type="file" onchange="previewImage(this,'previewId')">-->
-<!--        <div id='previewId'style='position: absolute;'></div>-->
+        <!--        <button type="submit" class="btn btn-danger btn-block" id="">-->
+        <!--            &nbsp; 마블-->
+        <!--            히어로와 비교해드립니다<br><span style="font-size:0.9em;font-weight:normal;letter-spacing:-1px;color:#535353">Getting started with face recognition</span>-->
+        <!--        </button>-->
+        <!--        <button type="button" class="btn btn-danger btn-block" id="formsend2"-->
+        <!--                style="width:100%;height:80px;border-radius:7px;background-color:#9d7d00;border:0px;color:#1e1c0b;font-weight:bold;font-size:1.2em;display:none;"-->
+        <!--                onclick="javascript:alert('분석중이니 잠시만 기다려주세요! ');"><i class="fad fa-spinner fa-spin"-->
+        <!--                                                                     style="vertical-align:-15%;font-size:1.5em"-->
+        <!--                                                                     aria-hidden="true"></i>&nbsp;&nbsp; 마블 히어로와 비교중!!-->
+        <!--        </button>-->
 
-
-        <button type="submit" class="btn btn-danger btn-block" id="">
-            <i class="fas fa-webcam" style="vertical-align:-15%;font-size:1.5em" aria-hidden="true"></i>&nbsp;&nbsp; 마블
-            히어로와 비교해드립니다<br><span style="font-size:0.9em;font-weight:normal;letter-spacing:-1px;color:#535353">Getting started with face recognition</span>
-        </button>
-        <button type="button" class="btn btn-danger btn-block" id="formsend2"
-                style="width:100%;height:80px;border-radius:7px;background-color:#9d7d00;border:0px;color:#1e1c0b;font-weight:bold;font-size:1.2em;display:none;"
-                onclick="javascript:alert('분석중이니 잠시만 기다려주세요! ');"><i class="fad fa-spinner fa-spin"
-                                                                     style="vertical-align:-15%;font-size:1.5em"
-                                                                     aria-hidden="true"></i>&nbsp;&nbsp; 마블 히어로와 비교중!!
-        </button>
-        </form>
 
     </div>
 </div>
+
+
+<!--<button type='button' id="modal_btn">모달창아 나와랏</button>-->
+<!--<div class="black_bg"></div>-->
+<!--<div class="modal_wrap">-->
+<!--    <div class="modal_close"><button class="modal_close">CLOSE</button></div>-->
+<!--    <div>-->
+<!--         <span style="font-size:1.3em;letter-spacing:-1px;color:#242a30;">&nbsp;&nbsp; <b>얼굴 사진과 마블히어로들을 비교해드립니다</b></span></p>-->
+<!--        <span style="font-size:1em;letter-spacing:-1px;color:#838383;"> 용량이 너무 큰 고화질 사진은 오류가 발생할 수 있어요 (2mb 이하 권장)</span></p>-->
+<!--        <span style="font-size:1em;letter-spacing:-1px;color:#b8b8b8;">If you upload a picture of your face here, you'll find a look-alike  marvel heroes. You can also compare with accuracies between you and  marvel heroes.</span></p>-->
+<!--        <input type="file" id="image" accept="image/*" onchange="setThumbnail(event);"/>-->
+<!--        <div id="image_container">-->
+<!--            <img id="image_file" src="">-->
+<!--        </div>-->
+
+
+<!--        <button type="submit" class="btn btn-danger btn-block" id="">-->
+<!--            &nbsp; 마블-->
+<!--            히어로와 비교해드립니다<br><span style="font-size:0.9em;font-weight:normal;letter-spacing:-1px;color:#535353">Getting started with face recognition</span>-->
+<!--        </button>-->
+<!--    </div>-->
+<!--<div>-->
+<!-----------모달------------------------------------------------------------------------------------------------------>
+<div id="modal-option" class="modal-overlay">
+    <div id="modal-script" class="modal_body">
+        <!--        <div class="upload">-->
+        <!--            <span style="font-size:1.3em;letter-spacing:-1px;color:blue;">&nbsp;&nbsp; <b>얼굴 사진과 마블히어로들을 비교해드립니다</b></span></p>-->
+        <!--            &ndash;&gt;-->
+        <!--            <span style="font-size:1em;letter-spacing:-1px;color:red;"> 용량이 너무 큰 고화질 사진은 오류가 발생할 수 있어요 (2mb 이하 권장)</span></p>-->
+        <!--            <span style="font-size:1em;letter-spacing:-1px;color:#b8b8b8;">If you upload a picture of your face here, you'll find a look-alike  marvel heroes. You can also compare with accuracies between you and  marvel heroes.</span></p>-->
+        <!--            <img style="display: none;" id="frame" src="" width="300px"/>-->
+        <!--            <input type="file" id="upload-file" onchange="preview()">-->
+        <!--            <input type="file" id="image" accept="image/*" onchange="setThumbnail(event);"/>-->
+        <!--            <div id="image_container">-->
+        <!--                <img id="image_file" src="">-->
+        <!--            </div>-->
+        <!--        </div>-->
+        <div class="upload">
+            <img style="display: none;" id="frame" src="" width="300px"/>
+            <input type="file" id="upload-file" onchange="preview()">
+            <input type="text" id="upload-title">
+            <button onclick="upload()">파일을 업로드해봅시다!</button>
+        </div>
+
+        <div class="search">
+            <input type="text" id="search-title">
+            <button onclick="search()">
+                &nbsp; 마블
+                히어로와 비교해드립니다<br><span style="font-size:0.9em;font-weight:normal;letter-spacing:-1px;color:#535353">Getting started with face recognition</span>
+            </button>
+        </div>
+        <div class="close">
+            <button id="close-modal" class="close-area"
+                    style="background-color: white; border: none; border-radius: 10px;">
+                <span>취소</span>
+            </button>
+        </div>
+    </div>
+</div>
+
+<!--<script>-->
+<!--    window.onload = function() {-->
+
+<!--    function onClick() {-->
+<!--        document.querySelector('.modal_wrap').style.display ='block';-->
+<!--        document.querySelector('.black_bg').style.display ='block';-->
+<!--    }-->
+<!--    function offClick() {-->
+<!--        document.querySelector('.modal_wrap').style.display ='none';-->
+<!--        document.querySelector('.black_bg').style.display ='none';-->
+<!--    }-->
+
+<!--    document.getElementById('modal_btn').addEventListener('click', onClick);-->
+<!--    document.querySelector('.modal_close').addEventListener('click', offClick);-->
+
+<!--};-->
+<!--</script>-->
+
 
 <!-- 게시글 작성 버튼 클릭시 일기장 작성 팝업 -->
 <!--<div id="post-modal" class="modal-overlay2" style="position:center">-->
