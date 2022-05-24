@@ -39,6 +39,7 @@
     <link href="../static/css/common.css" rel="stylesheet" type="text/css" />
     <link href="../static/css/main.css" rel="stylesheet" type="text/css" />
 
+
     <!--js 파일 불러오기-->
     <script defer src="../static/js/common.js"></script>
     <script defer src="../static/js/main.js"></script>
@@ -129,17 +130,20 @@
 
     <!-- 이미지 업로드 모달창-->
     <div class="img_modal_box">
-      <div class="img_modal_input">
+      <div class="img_modal_input neonbutton" >
+
         <input
           type="file"
           id="modal_input_img"
           accept="image/*"
           onchange="preview(event);"
         />
-        <div id="image_container">
+        <div class="neonbutton" id="image_container">
           <img id="image_file" src="" />
         </div>
+        <div style="margin-top:300px">
         <button onclick="upload_user_img()">업로드 하기</button>
+        </div>
       </div>
     </div>
   </body>

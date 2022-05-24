@@ -1,170 +1,283 @@
 .main_body {
-  width: 935px;
-  height: auto;
+    width: 935px;
+    height: auto;
 
-  margin: 120px auto;
+    margin: 120px auto;
 
-  background-color: #fff0f0;
-  border: 1px solid #e8e8e8;
-  box-shadow: 1px 1px 5px gray;
+    background-color: #fff0f0;
+    border: 1px solid #e8e8e8;
+    box-shadow: 1px 1px 5px gray;
 }
 
 .main_body .row_upload_btn {
-  margin-top: 30px;
-  width: 100%;
-  height: 150px;
+    margin-top: 30px;
+    width: 100%;
+    height: 150px;
 }
 
 .main_body .row_upload_btn .btn_box {
-  width: 300px;
-  height: 100%;
+    width: 300px;
+    height: 100%;
 
-  margin: auto;
-  padding: 10px;
+    margin: auto;
+    padding: 10px;
 
-  text-align: center;
-  font-size: 15px;
-  font-weight: bold;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
 
-  line-height: 150%;
+    line-height: 150%;
 }
 
 .main_body .row_upload_btn .btn_box .btn_upload {
-  margin: 5px auto 10px auto;
-  padding: 10px;
+    margin: 5px auto 10px auto;
+    padding: 10px;
 
-  display: block;
+    display: block;
 }
 
 #result_view {
-  display: none;
+    display: none;
 }
 
 .main_body .row_main_img {
-  width: 100%;
-  height: 300px;
+    width: 100%;
+    height: 300px;
 
-  margin-top: 50px;
+    margin-top: 50px;
 
-  display: flex;
-  flex-direction: row;
-  align-items: normal;
-  justify-content: space-around;
+    display: flex;
+    flex-direction: row;
+    align-items: normal;
+    justify-content: space-around;
 }
 
 .main_body .row_main_img .main_img_box {
-  width: 35%;
-  height: 100%;
+    width: 35%;
+    height: 100%;
 
-  text-align: center;
+    text-align: center;
 
-  font-weight: bold;
+    font-weight: bold;
 }
 
 .main_body .row_main_img .main_img_box .main_img {
-  width: 100%;
-  height: 100%;
+    width: 100%;
+    height: 100%;
 
-  border-radius: 20px;
-  box-shadow: 1px 1px 5px gray;
+    border-radius: 20px;
+    box-shadow: 1px 1px 5px gray;
 
-  object-fit: cover;
+    object-fit: cover;
 }
 
 .row_hero_info {
-  width: 85%;
-  height: auto;
+    width: 85%;
+    height: auto;
 
-  margin-top: 50px;
-  padding: 0px 80px;
+    margin-top: 50px;
+    padding: 0px 80px;
 
-  line-height: 180%;
+    line-height: 180%;
 }
 
 .row_hero_info .hero_name {
-  width: 100%;
-  height: 60px;
+    width: 100%;
+    height: 60px;
 
-  font-size: 35px;
-  font-weight: bold;
+    font-size: 35px;
+    font-weight: bold;
 }
 
 .row_hero_sub {
-  width: 100%;
-  height: 250px;
+    width: 100%;
+    height: 250px;
 
-  margin-top: 50px;
+    margin-top: 50px;
 
-  display: flex;
-  flex-direction: row;
-  align-items: normal;
-  justify-content: space-around;
+    display: flex;
+    flex-direction: row;
+    align-items: normal;
+    justify-content: space-around;
 }
 
 .row_hero_sub .hero_sub_box {
-  width: 35%;
-  height: 100%;
+    width: 35%;
+    height: 100%;
 
-  text-align: center;
-  font-weight: bold;
+    text-align: center;
+    font-weight: bold;
 }
 
 .row_hero_sub .hero_sub_box .hero_sub_img {
-  width: 100%;
-  height: 100%;
+    width: 100%;
+    height: 100%;
 
-  border-radius: 20px;
-  box-shadow: 1px 1px 5px gray;
+    border-radius: 20px;
+    box-shadow: 1px 1px 5px gray;
 
-  object-fit: cover;
+    object-fit: cover;
 
-  cursor: pointer;
+    cursor: pointer;
 }
 
 .row_histoty_btn {
-  width: 100%;
-  height: 100px;
+    width: 100%;
+    height: 100px;
 
-  margin-top: 150px;
+    margin-top: 150px;
 }
 
 .row_histoty_btn .histroy_btn_box {
-  width: 500px;
-  height: 100%;
-  margin: auto;
+    width: 500px;
+    height: 100%;
+    margin: auto;
 
-  display: flex;
-  flex-direction: row;
-  align-items: normal;
-  justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    align-items: normal;
+    justify-content: space-between;
 }
 
 .row_histoty_btn .histroy_btn_box .history_btn {
-  width: 40%;
+    width: 40%;
 
-  padding: 10px;
-  display: block;
-  margin: auto;
+    padding: 10px;
+    display: block;
+    margin: auto;
 }
 
 .img_modal_box {
-  width: 100%;
-  height: 100%;
+    width: 100%;
+    height: 100%;
 
-  position: absolute;
-  top: 0px;
-  left: 0px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
 
-  display: none;
+    display: none;
 
-  background-color: red;
+    background-color: red;
 }
 
 .img_modal_box .img_modal_input {
-  width: 500px;
-  height: 500px;
 
-  margin: 150px auto;
+    top: 50%;
+    left: 50%;
+    width: 500px;
+    height: 500px;
+    padding:40px;
+    border-radius: 10px;
+    text-align: center;
 
-  background-color: white;
+    background-image: url('../images/modal/modal.jpg');
+    margin: 150px auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+}
+/*버튼 꾸미기*/
+
+neonbutton{
+    position: relative;
+    display: inline-block;
+    padding: 25px 30px;
+    margin: 40px 0;
+    color: #03e9f4;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+    letter-spacing: 4px;
+    overflow: hidden;
+    margin-right: 50px;
+
+}
+neonbutton:hover{
+    background: #03e9f4;
+    color: #050801;
+    box-shadow: 0 0 5px #03e9f4,
+                0 0 25px #03e9f4,
+                0 0 50px #03e9f4,
+                0 0 200px #03e9f4;
+     /*-webkit-box-reflect:below 1px linear-gradient(transparent, #0005);*/
+}
+neonbutton:nth-child(1){
+    filter: hue-rotate(270deg);
+}
+neonbutton:nth-child(2){
+    filter: hue-rotate(110deg);
+}
+neonbutton span{
+    position: absolute;
+    display: block;
+}
+neonbutton span:nth-child(1){
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg,transparent,#03e9f4);
+    animation: animate1 1s linear infinite;
+}
+@keyframes animate1{
+    0%{
+        left: -100%;
+    }
+    50%,100%{
+        left: 100%;
+    }
+}
+neonbutton span:nth-child(2){
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,#03e9f4);
+    animation: animate2 1s linear infinite;
+    animation-delay: 0.25s;
+}
+@keyframes animate2{
+    0%{
+        top: -100%;
+    }
+    50%,100%{
+        top: 100%;
+    }
+}
+neonbutton span:nth-child(3){
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg,transparent,#03e9f4);
+    animation: animate3 1s linear infinite;
+    animation-delay: 0.50s;
+}
+@keyframes animate3{
+    0%{
+        right: -100%;
+    }
+    50%,100%{
+        right: 100%;
+    }
+}
+
+
+neonbutton span:nth-child(4){
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,#03e9f4);
+    animation: animate4 1s linear infinite;
+    animation-delay: 0.75s;
+}
+@keyframes animate4{
+    0%{
+        bottom: -100%;
+    }
+    50%,100%{
+        bottom: 100%;
+    }
 }
