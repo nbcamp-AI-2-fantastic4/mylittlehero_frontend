@@ -53,7 +53,11 @@
     <!-- 해더 -->
     <div class="header">
       <div class="header_body">
-        <a href="/"><img class="logo" src="../static/images/logo.png" /></a>
+        <img
+          class="logo"
+          onclick="window.location.reload()"
+          src="../static/images/logo.png"
+        />
         <div class="user_info">
           <span style="font-weight: bold" id="user_name">김동우</span> <br />
           <span id="user_email">kimphysicsman@gmail.com</span> <br />
@@ -72,16 +76,18 @@
           ↑↑↑ 사진 업로드하기 ↑↑↑ <br />
           나와 닮은 마블 캐릭터를 찾아보세요!
         </div>
+
+        <div class="btn_box">
+          <button class="btn_upload" onclick="location.href='result.html'">
+            히스토리 보러가기
+          </button>
+        </div>
       </div>
 
       <div id="result_view">
         <div class="row_main_img">
           <div class="main_img_box">
-            <img
-              class="main_img"
-              name="user"
-              src="../static/images/user/001.jpg"
-            />
+            <img class="main_img" name="user" src="" />
             나의 사진
           </div>
           <div class="main_img_box">
@@ -120,7 +126,9 @@
               <button class="history_btn" onclick="restart_upload()">
                 다시 하기
               </button>
-              <button class="history_btn">히스토리 보러가기</button>
+              <button class="history_btn" onclick="location.href='result.html'">
+                히스토리 보러가기
+              </button>
             </div>
           </div>
         </div>
@@ -128,7 +136,7 @@
     </div>
 
     <!-- 이미지 업로드 모달창-->
-    <div class="img_modal_box">
+    <div class="img_modal_box" onclick="quit_img_modal()">
       <div class="img_modal_input">
         <input
           type="file"

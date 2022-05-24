@@ -41,6 +41,8 @@
   border-radius: 10px;
 
   box-shadow: 1px 1px 5px gray;
+
+  cursor: pointer;
 }
 
 .header .header_body .user_info {

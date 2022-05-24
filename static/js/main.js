@@ -129,6 +129,10 @@ async function save_result() {
       );
     },
   });
+
+  // 업로드 모달창 정보 지우기
+  $("#image_file").attr("src", "");
+  $("#modal_input_img").val("");
 }
 
 // 이미지 업로드 모달창 띄우는 함수
@@ -138,11 +142,18 @@ function upload_img_modal() {
 
 // 모달창에서 업로드할 이미지 미리보기
 function preview(event) {
-  var reader = new FileReader();
+  let reader = new FileReader();
   reader.onload = (event) => {
-    var img = document.querySelector("#image_file");
+    let img = document.querySelector("#image_file");
     img.setAttribute("src", event.target.result);
+
+    $('.main_img[name="user"]').attr("src", event.target.result);
   };
 
   reader.readAsDataURL(event.target.files[0]);
+}
+
+// 이미지 업로드 모달창 끄기 함수
+function quit_img_modal() {
+  $(".img_modal_box").css("display", "none");
 }
