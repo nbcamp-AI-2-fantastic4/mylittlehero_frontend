@@ -138,17 +138,21 @@
     <!-- 이미지 업로드 모달창-->
     <div class="img_modal_box" onclick="quit_img_modal(event)">
       <div class="img_modal_input neonbutton">
-        <input
-          type="file"
-          id="modal_input_img"
-          accept="image/*"
-          onchange="preview(event);"
-        />
-        <div class="neonbutton" id="image_container">
+        <div class="img_modal_input_box">
+          <input
+            type="file"
+            id="modal_input_img"
+            accept="image/*"
+            onchange="preview(event);"
+          />
+        </div>
+        <div id="image_container">
           <img id="image_file" src="" />
         </div>
-        <div style="margin-top: 300px">
-          <button onclick="upload_user_img()">업로드 하기</button>
+        <div class="neonbutton">
+          <button class="img_modal_upload_btn" onclick="upload_user_img()">
+            업로드 하기
+          </button>
         </div>
       </div>
     </div>
