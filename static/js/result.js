@@ -13,12 +13,12 @@ function showResult() {
                 let user_img = all_list[i]['user_img']
                 let hero_img = all_list[i]['hero_img']
                 let hero = all_list[i]['hero']
-                let description = all_list[i]['description'].slice(0, 100) + '...'
+                let description = all_list[i]['description'].slice(0, 90) + '...'
                 let accuracy = all_list[i]['accuracy']
                 let temp_html = `
                                    <div id="container">                         
                                         <div class="product-details">                            
-                                            <h1>닮은꼴</h1>                            
+                                            <h1>My Little Hero</h1>                            
                                             <img src="${user_img}"
                                                  class="information" id="user_img">                          
                                         </div>
@@ -29,9 +29,9 @@ function showResult() {
                                             <div class="info" id="marble_info">
                                                <h2> Description</h2>
                                                 <ul>
-                                                    <li><strong >Name :</strong >  ${hero}</li>
-                                                    <li><strong >Description :</strong >${description}</li>
-                                                    <li><strong >Accuracy :</strong >${accuracy}</li>
+                                                    <li><strong >Name : </strong >  ${hero}</li>
+                                                    <li style="padding-right: 10px;"><strong>Description  </strong><br>${description}</li>
+                                                    <li><strong >Accuracy : </strong >${accuracy}</li>
                                                 </ul>
                                             </div>
                                         </div>
