@@ -24,7 +24,7 @@ function showResult() {
                                         </div>
                                         <!--마블 이미지 넣는 곳-->
                                         <div class="product-image" id="marble_img">
-                                            <img src="${hero_img}"
+                                            <img src="http://172.30.1.36:5000/${hero_img}"
                                                  alt="">
                                             <div class="info" id="marble_info">
                                                <h2> Description</h2>
