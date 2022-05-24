@@ -1,25 +1,25 @@
 $(document).ready(function () {
-    showResult();
+  showResult();
 });
 
 function showResult() {
-    $.ajax({
-        type: "GET",
-        url: "http://127.0.0.1:5000/result",
-        data: {},
-        success: function (response) {
-            let all_list = response['all_result']
-            for (let i = 0; i < all_list.length; i++) {
-                let user_img = all_list[i]['user_img']
-                let hero_img = all_list[i]['hero_img']
-                let hero = all_list[i]['hero']
-                let description = all_list[i]['description'].slice(0, 90) + '...'
-                let accuracy = all_list[i]['accuracy']
-                let temp_html = `
+  $.ajax({
+    type: "GET",
+    url: "http://172.30.1.36:5000/result",
+    data: {},
+    success: function (response) {
+      let all_list = response["all_result"];
+      for (let i = 0; i < all_list.length; i++) {
+        let user_img = all_list[i]["user_img"];
+        let hero_img = all_list[i]["hero_img"];
+        let hero = all_list[i]["hero"];
+        let description = all_list[i]["description"].slice(0, 90) + "...";
+        let accuracy = all_list[i]["accuracy"];
+        let temp_html = `
                                    <div id="container">                         
                                         <div class="product-details">                            
                                             <h1>My Little Hero</h1>                            
-                                            <img src="${user_img}"
+                                            <img src="http://172.30.1.36:5000/${user_img}" name="${i}"
                                                  class="information" id="user_img">                          
                                         </div>
                                         <!--마블 이미지 넣는 곳-->
@@ -35,10 +35,9 @@ function showResult() {
                                                 </ul>
                                             </div>
                                         </div>
-                                    </div>`
-                console.log(hero, accuracy)
-                $('#result-box').append(temp_html)
-            }
-        }
-    })
+                                    </div>`;
+        $("#result-box").append(temp_html);
+      }
+    },
+  });
 }

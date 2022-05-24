@@ -1,3 +1,9 @@
+$(document).ready(function () {
+  if (!localStorage.getItem("token")) {
+    location.href = "/templates/log_in.html";
+  }
+});
+
 // user-info GET
 async function userinfo() {
   // html 헤더 name, email id에 변수 적용
