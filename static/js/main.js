@@ -90,7 +90,7 @@ async function save_result() {
 
   $.ajax({
     type: "POST",
-    url: "http://172.30.1.36:5000/main/result",
+    url: "http://127.0.0.1:5000/main/result",
     data: form_data,
     cache: false,
     contentType: false,
